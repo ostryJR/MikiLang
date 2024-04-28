@@ -3,10 +3,12 @@ STRING str = "This is string. Blablabla"
 
 INT iter = 0
 BOOL work = TRUE
-WHILE work != TRUE DO:
-    IF work == TRUE:
+WHILE work == TRUE DO:
+    IF iter < n:
         iter += 1
     ELIF str == "bla":
         str +="works or not"
     ELSE:
         work = FALSE
+
+PRINT iter

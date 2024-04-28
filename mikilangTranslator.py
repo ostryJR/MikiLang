@@ -48,6 +48,8 @@ def compileLine(lineRaw, linecount):
                 translated.write(f'elif{text}:')
         case "ELSE":
             translated.write(f'else:')
+        case "PRINT":
+            translated.write(f'print({line[1]})')
         case _:
             translated.write(normalizeText(" ".join(line)))
 file = open("mikilangCode.mlang", "r")
